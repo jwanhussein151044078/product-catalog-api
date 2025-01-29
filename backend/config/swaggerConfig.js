@@ -4,7 +4,7 @@ const swaggerOptions = {
   definition: {
     openapi: '3.0.0',
     info: {
-      title: 'Backend Developer Test Project',
+      title: 'Test Project',
       version: '1.0.0',
       description: 'API documentation for the catalog service project',
     },
