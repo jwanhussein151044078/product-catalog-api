@@ -11,7 +11,7 @@ export function HomeScreen(){
       <Flex vertical gap="middle">
         <h1 className="text-4xl font-bold text-blue-600">Hello, This is the Home Page</h1>
         <PrimaryBtn
-          title   = "Go To Profit Screen"
+          title   = "Go To Catalog Screen"
           onClick = {()=> navigation("/catalog")}
         />
       </Flex>
