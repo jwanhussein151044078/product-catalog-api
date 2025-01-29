@@ -1,7 +1,7 @@
 const catalogService = require('../services/catalogService');
 const CustomError = require('../utils/CustomError');
 
-async function getAllCatalogs(req, res){
+async function getAllCatalogs(req, res , next){
   try {
     const {offset,limit} = req.query ;
     const status = await catalogService.getAllCatalogs({offset,limit});
@@ -11,7 +11,7 @@ async function getAllCatalogs(req, res){
   }
 }
 
-async function getCatalogDetailById(req, res){
+async function getCatalogDetailById(req, res , next){
   try {
     const {id} = req.params;
     if(!id){
